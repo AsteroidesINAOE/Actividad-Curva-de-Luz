@@ -12,7 +12,7 @@ Cuando ya se tienen las imágenes finales, es necesario identificar el asteroide
 
 Mediante algún software se mide su magnitud en cada imagen y se puede graficar finalmente en función del tiempo. Una gráfica como estas se puede observar a continuación (note que la fecha está dada en formato Juliano).
 
-<img src="https://github.com/Kevin22062000/Servicio-Social/blob/main/771_Libera.PNG" width="475px" alt="400px"/>
+<img src="https://github.com/AsteroidesINAOE/Actividad-Curva-de-Luz/blob/gh-pages/771_Libera.PNG" width="475px" alt="400px"/>
 
 Como las observaciones que se hacen a un objeto pueden variar en tiempo por días, semanas, meses e incluso años, es conveniente poner los datos en “fase”. Es decir, todas las observaciones de cada fecha que coincidan con una de las caras que nos dé el asteroide corresponderán a un solo valor o estarán alrededor de un solo valor en el eje x. De esta forma, si se observó una cara del asteroide en un momento dado y meses después se observó de nuevo, ambos datos coincidirán alrededor de un punto. Cuando se llega a la última cara del asteroide no se tendrán datos más allá, pues se volvería a estar en la cara que se graficó al inicio. Es por esta razón que los valores en el eje x van desde 0 hasta 1, pues en este extremo final el asteroide habrá dado una vuelta, es decir, habrá completado un periodo de rotación.
 
@@ -52,7 +52,7 @@ Los estudiantes trazarán y analizarán datos observacionales colectados por mie
 
 Los Asteroides son objetos rocosos que orbitan el Sol, pero que son muy pequeños para considerarlos planetas. De hecho, son comúnmente conocidos como “Planetas Menores”.
 
-<img src="https://github.com/Kevin22062000/Servicio-Social/blob/main/asteroids-graphic-updatedlogo-01.width-500.png"/>
+<img src="https://github.com/AsteroidesINAOE/Actividad-Curva-de-Luz/blob/gh-pages/asteroids-graphic-updatedlogo-01.width-500.png"/>
 
 La mayoría de los asteroides en nuestro Sistema Solar están localizados en el cinturón de asteroides, entre Marte y Júpiter. Sin embargo, hay algunos que han dejado esta región influenciados por las fuerzas gravitacionales ejercidas por los planetas, y están en caminos que los llevan cerca de la Tierra. Si se aproximan a la Tierra a una distancia menor que 1.3 UA (1 UA es la distancia entre la Tierra y el Sol), son considerados como Objetos Cercanos a la Tierra, o NEOs (por sus siglas en inglés). Observaciones de objetos cercanos a la Tierra pueden revelar información acerca de su tamaño, forma, composición, camino orbital y rotación.
 
@@ -94,13 +94,13 @@ Algunos datos están disponibles desde el *Asteroid Tracker* para el asteroide 2
 
     I:	**Telescope Code** (un código hecho de varios números de letras y números).
 
-    <img src="https://github.com/Kevin22062000/Servicio-Social/blob/main/asteroid-rotation-scrn10-700x150.max-1000x1000.png"/>
+    <img src="https://github.com/AsteroidesINAOE/Actividad-Curva-de-Luz/blob/gh-pages/asteroid-rotation-scrn10-700x150.max-1000x1000.png"/>
 
 3. Ordene su hoja de cálculo por el **Telescope Code**. Borre todas las filas que no tengan el telescope code ‘**Z21**’, esto nos dejará con datos colectados por un telescopio LCO de 0.4 metros en el Observatorio Teide.
 
 4. En esta actividad estaremos trazando el cambio en la magnitud (brillo) de un asteroide con el tiempo. Para hacer esto, haga un diagrama de dispersión de **date** y **magnitude**. Puede resaltar ambas columnas presionando **CMD** en una Mac o **CTRL** en un dispositivo Windows, luego seleccione **Gráfico>Gráfico de dispersión marcado.**
 
-      <img src="https://github.com/Kevin22062000/Servicio-Social/blob/main/screen_shot_2017-02-24_at_12.39.57-737x364.max-1000x1000.png"/>
+      <img src="https://github.com/AsteroidesINAOE/Actividad-Curva-de-Luz/blob/gh-pages/screen_shot_2017-02-24_at_12.39.57-737x364.max-1000x1000.png"/>
         
       Notará que hay brechas en los datos, como los mostrados en la imagen de arriba, dándonos una serie de curvas de luz parciales. El siguiente paso es combinar los datos y crear una curva de luz completa, hágalo siguiendo los pasos siguientes.
     
@@ -116,7 +116,7 @@ Algunos datos están disponibles desde el *Asteroid Tracker* para el asteroide 2
 
     **Periodo(hrs)/24(hrs)**
 
-    <img src="https://github.com/Kevin22062000/Servicio-Social/blob/main/asteroid-rotation-scrn11-855x150-2.max-1000x1000.png"/>
+    <img src="https://github.com/AsteroidesINAOE/Actividad-Curva-de-Luz/blob/gh-pages/asteroid-rotation-scrn11-855x150-2.max-1000x1000.png"/>
 
 8. Ahora usaremos el periodo de rotación y la fecha, para calcular la **Fase**. En una columna llamada **Phase**, use la siguiente ecuación donde INT convertirá la segunda cantidad en un número entero.
 
@@ -126,7 +126,7 @@ Algunos datos están disponibles desde el *Asteroid Tracker* para el asteroide 2
 
 10. Ahora crearemos un nuevo gráfico de dispersión para mostrar la magnitud del asteroide cambiando con el tiempo. Esta vez realice el gráfico usando los valores de **Phase** y **Magnitude**. Debería notar que las curvas de luz ahora están apiladas y los espacios se han eliminado, creando una curva de luz más clara y completa. Si este no es el caso, intente jugar con el valor de **Period** hasta que obtenga algo similar al gráfico de abajo.
 
-    <img src="https://github.com/Kevin22062000/Servicio-Social/blob/main/2002_KL6_light_curve_pt1.max-600x600.png"/>
+    <img src="https://github.com/AsteroidesINAOE/Actividad-Curva-de-Luz/blob/gh-pages/2002_KL6_light_curve_pt1.max-600x600.png"/>
 
 11. Los valores de menor magnitud significan que un objeto es más brillante y los picos siguen claramente una pendiente descendente. Haga click en el eje de magnitud y seleccione **Valores en orden inverso** para mostrar esto claramente.
 
