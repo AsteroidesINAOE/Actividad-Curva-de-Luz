@@ -13,6 +13,7 @@ Cuando ya se tienen las imágenes finales, es necesario identificar el asteroide
 Mediante algún software se mide su magnitud en cada imagen y se puede graficar finalmente en función del tiempo. Una gráfica como estas se puede observar a continuación (note que la fecha está dada en formato Juliano).
 
 ![](https://github.com/AsteroidesINAOE/Actividad-Curva-de-Luz/blob/gh-pages/771_Libera.PNG)
+
 <!DOCTYPE html>
 <html>
     <body>
