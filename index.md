@@ -14,8 +14,6 @@ Mediante algún software se mide su magnitud en cada imagen y se puede graficar 
 
 <img src="https://github.com/AsteroidesINAOE/Actividad-Curva-de-Luz/blob/gh-pages/771_Libera.PNG" width="475px" alt="400px"/>
 
-![](https://github.com/AsteroidesINAOE/Actividad-Curva-de-Luz/blob/gh-pages/771_Libera.PNG)
-
 Como las observaciones que se hacen a un objeto pueden variar en tiempo por días, semanas, meses e incluso años, es conveniente poner los datos en “fase”. Es decir, todas las observaciones de cada fecha que coincidan con una de las caras que nos dé el asteroide corresponderán a un solo valor o estarán alrededor de un solo valor en el eje x. De esta forma, si se observó una cara del asteroide en un momento dado y meses después se observó de nuevo, ambos datos coincidirán alrededor de un punto. Cuando se llega a la última cara del asteroide no se tendrán datos más allá, pues se volvería a estar en la cara que se graficó al inicio. Es por esta razón que los valores en el eje x van desde 0 hasta 1, pues en este extremo final el asteroide habrá dado una vuelta, es decir, habrá completado un periodo de rotación.
 
 Otro aspecto que señalar es que las observaciones en diferentes fechas tienen una diferencia pequeña en su magnitud entre ellas. Por ejemplo, en una noche se observó que la mayor magnitud que se recibió de un asteroide fue de 14 y otra noche fue de 14.5. Esto no supone mayor problema que restar o sumar valores a los datos de una u otra noche para hacerlos coincidir.
