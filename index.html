@@ -229,9 +229,28 @@
 	<li>Ahora necesitamos introducir el periodo de rotación del asteroide. El periodo de rotación será introducido en una columna llamada ‘<b>Period</b>’. Si le gustaría saber el periodo de rotación, sombree el siguiente texto:<br><br>
 		<p style="color:black">4.61 horas<br><br></p>
     		De otra manera, debe introducir un periodo de rotación aleatorio, después inferir con qué precisión se basa el valor en la curva de luz que se trazará en el Paso 10. Como punto de partida le diremos que el plazo para 2002 KL6 es de entre 4.5 horas y 5 horas. Si ingresa el periodo de rotación correcto, debería ver una serie de curvas de luz apiladas. Si el valor es incorrecto, los datos aparecerán confusos y aleatorios. Simplemente cambia la cifra en la columna Period hasta que esté satisfecho con la curva de luz.<br><br></li>
-	
-	
-	
+	<li>Ahora necesita convertir su periodo de rotación en una fracción de un día. En una columna llamada <b>Rotation</b>, use la siguiente ecuación para introducir el valor correcto en cada fila:<br><br>
+		<b>Periodo(hrs)/24(hrs)</b><br><br>
+		<img src="https://github.com/Kevin22062000/Servicio-Social/blob/main/asteroid-rotation-scrn11-855x150-2.max-1000x1000.png"/><br><br></li>
+	<li>Ahora usaremos el periodo de rotación y la fecha, para calcular la <b>Fase</b>. En una columna llamada <b>Phase</b>, use la siguiente ecuación donde INT convertirá la segunda cantidad en un número entero.<br><br>
+		<b>(fecha/rotación)-INT(fecha/rotación)</b><br><br></li>
+	<li>Complete la <b>Phase</b> de cada fila.<br><br></li>
+	<li>Ahora crearemos un nuevo gráfico de dispersión para mostrar la magnitud del asteroide cambiando con el tiempo. Esta vez realice el gráfico usando los valores de <b>Phase</b> y <b>Magnitude</b>. Debería notar que las curvas de luz ahora están apiladas y los espacios se han eliminado, creando una curva de luz más clara y completa. Si este no es el caso, intente jugar con el valor de **Period** hasta que obtenga algo similar al gráfico de abajo.<br><br>
+    		<img src="https://github.com/Kevin22062000/Servicio-Social/blob/main/2002_KL6_light_curve_pt1.max-600x600.png"/><br><br></li>
+	<li>Los valores de menor magnitud significan que un objeto es más brillante y los picos siguen claramente una pendiente descendente. Haga click en el eje de magnitud y seleccione <b>Valores en orden inverso</b> para mostrar esto claramente.<br><br></li>
+	<li>Ahora, revise la primera curva de luz que realizó. ¿Nota que el asteroide parece iluminarse con el tiempo? ¿Qué cree que causó este brillo? Resalte el siguiente texto para ver la respuesta:<br><br>
+		<p style="color:black">¡El asteroide viajaba más cerca de la Tierra!</p><br><br>
+		Este brillo es la razón por la que su gráfico más reciente tiene varios picos apilados directamente uno encima del otro. Para superponer estos picos, tendremos que compensar el brillo cambiando nuestros valores de magnitud a ojo. Cree una nueva columna para las magnitudes revisadas y continúe leyendo.<br><br>
+		<b>Como compensar el brillo del asteroide</b><br><br>
+		Mirando atrás a su vieja curva, notará que mientras el asteroide aumentó su brillo con el tiempo, algunos de los picos son de magnitud similar. En el ejemplo de debajo podrá ver los puntos de los datos pueden ser separados en tres grupos con otros picos de la misma magnitud. Llamémoslos Grupo 1, Grupo 2 y Grupo 3 (moviéndonos de izquierda a derecha).<br><br>
+		Como hay más puntos de datos en el Grupo 2, reduciremos la magnitud del Grupo 1, e incrementaremos la magnitud del Grupo 3 para que coincida. Los puntos de datos en el Grupo 2 permanecerán sin cambios.<br><br>
+		Mirando mi gráfica, puedo ver que los puntos de datos en el Grupo 1 caen entre el 8-10 de junio y el pico en 16 mag, +0.25 mag comparado con el Grupo 2. Para alinear estos picos, necesito bajar todos los puntos de datos entre el 8-10 de junio 0.25 mag. Esto puede hacerse calculando <b>=SUM(magnitude-0.25)</b><br><br>
+		El último pico parece tomar lugar alrededor del 22 de junio, y alcanza su máximo de -0.35 en comparación con los primeros picos. Esto significa que deberá agregar 0.35 a todos los valores alrededor del 22 de junio.<br><br>
+		Copie la magnitud para el Grupo 2 directamente desde la columna magnitude y haga un nuevo gráfico de dispersión mostrando <b>Altered Magnitude</b> y <b>Phase</b>. Si es necesario, siga ajustando sus valores de esta manera, hasta que haya alineado los picos en su gráfica (vea imagen debajo).
+</ol>
+<h4>Conclusión</h4>	
+<p>
+	Usted debería tener ahora una curva de luz sólida que muestre el cambio en el brillo del asteroide a lo largo del tiempo. ¡Felicidades!</p>
 	
 	
 </font>   
