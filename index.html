@@ -97,11 +97,8 @@
   
     .indice {
 	background:#0099FF;
-	max-width:250px;
 	width:250px;
 	margin:20px 0 0 0;
-	display:flex;
-	flex-direction: column;
 	height:auto;
 	padding:20px;
   	border-radius:3px;
@@ -113,6 +110,13 @@
     .indice .indice_titulo {
 	font-size:20px;  
     }	  
+	
+    max-width: 900px{
+	.indice {
+		flex-wrap: wrap;
+		margin: 0;
+		width: 100%;
+	}	  
 	  
   </style>  
 </head>
