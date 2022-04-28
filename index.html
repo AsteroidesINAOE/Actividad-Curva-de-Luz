@@ -224,19 +224,19 @@
 	<li>Ordene su hoja de cálculo por el <b>Telescope Code</b>. Borre todas las filas que no tengan el telescope code ‘<b>Z21</b>’, esto nos dejará con datos colectados por un telescopio LCO de 0.4 metros en el Observatorio Teide.<br><br></li>
 	<li>En esta actividad estaremos trazando el cambio en la magnitud (brillo) de un asteroide con el tiempo. Para hacer esto, haga un diagrama de dispersión de <b>date</b> y <b>magnitude</b>. Puede resaltar ambas columnas presionando <b>CMD</b> en una Mac o <b>CTRL</b> en un dispositivo Windows, luego seleccione <b>Gráfico>Gráfico de dispersión marcado.<br><br></b>
 		<img src="screen_shot_2017-02-24_at_12.39.57-737x364.max-1000x1000.png"/><br><br>
-		Notará que hay brechas en los datos, como los mostrados en la imagen de arriba, dándonos una serie de curvas de luz parciales. El siguiente paso es combinar los datos y crear una curva de luz completa, hágalo siguiendo los pasos siguientes.</li>
+		Notará que hay brechas en los datos, como los mostrados en la imagen de arriba, dándonos una serie de curvas de luz parciales. El siguiente paso es combinar los datos y crear una curva de luz completa, hágalo siguiendo los pasos siguientes.<br><br></li>
 	<li>Si está usando la hoja de cálculo pre hecha, vaya a la segunda hoja llamada ‘<b>2002_KL6 (2)</b>’. Si ha creado tu propia hoja de cálculo, abra una nueva hoja de Excel y copie sus propios datos en ella. Puede hacer esto dando click derecho en la pestaña de la hoja y seleccionando <b>Mover o Copiar</b> y luego marcando <b>Crear una copia</b>. **No borre su primera hoja o curva de luz**.<br><br></li>
 	<li>Ahora necesitamos introducir el periodo de rotación del asteroide. El periodo de rotación será introducido en una columna llamada ‘<b>Period</b>’. Si le gustaría saber el periodo de rotación, sombree el siguiente texto:<br><br>
 		<p style="color:black">4.61 horas<br><br></p>
     		De otra manera, debe introducir un periodo de rotación aleatorio, después inferir con qué precisión se basa el valor en la curva de luz que se trazará en el Paso 10. Como punto de partida le diremos que el plazo para 2002 KL6 es de entre 4.5 horas y 5 horas. Si ingresa el periodo de rotación correcto, debería ver una serie de curvas de luz apiladas. Si el valor es incorrecto, los datos aparecerán confusos y aleatorios. Simplemente cambia la cifra en la columna Period hasta que esté satisfecho con la curva de luz.<br><br></li>
 	<li>Ahora necesita convertir su periodo de rotación en una fracción de un día. En una columna llamada <b>Rotation</b>, use la siguiente ecuación para introducir el valor correcto en cada fila:<br><br>
 		<b>Periodo(hrs)/24(hrs)</b><br><br>
-		<img src="https://github.com/Kevin22062000/Servicio-Social/blob/main/asteroid-rotation-scrn11-855x150-2.max-1000x1000.png"/><br><br></li>
+		<img src="asteroid-rotation-scrn11-855x150-2.max-1000x1000.png"/><br><br></li>
 	<li>Ahora usaremos el periodo de rotación y la fecha, para calcular la <b>Fase</b>. En una columna llamada <b>Phase</b>, use la siguiente ecuación donde INT convertirá la segunda cantidad en un número entero.<br><br>
 		<b>(fecha/rotación)-INT(fecha/rotación)</b><br><br></li>
 	<li>Complete la <b>Phase</b> de cada fila.<br><br></li>
 	<li>Ahora crearemos un nuevo gráfico de dispersión para mostrar la magnitud del asteroide cambiando con el tiempo. Esta vez realice el gráfico usando los valores de <b>Phase</b> y <b>Magnitude</b>. Debería notar que las curvas de luz ahora están apiladas y los espacios se han eliminado, creando una curva de luz más clara y completa. Si este no es el caso, intente jugar con el valor de **Period** hasta que obtenga algo similar al gráfico de abajo.<br><br>
-    		<img src="https://github.com/Kevin22062000/Servicio-Social/blob/main/2002_KL6_light_curve_pt1.max-600x600.png"/><br><br></li>
+    		<img src="2002_KL6_light_curve_pt1.max-600x600.png"/><br><br></li>
 	<li>Los valores de menor magnitud significan que un objeto es más brillante y los picos siguen claramente una pendiente descendente. Haga click en el eje de magnitud y seleccione <b>Valores en orden inverso</b> para mostrar esto claramente.<br><br></li>
 	<li>Ahora, revise la primera curva de luz que realizó. ¿Nota que el asteroide parece iluminarse con el tiempo? ¿Qué cree que causó este brillo? Resalte el siguiente texto para ver la respuesta:<br><br>
 		<p style="color:black">¡El asteroide viajaba más cerca de la Tierra!</p><br><br>
@@ -246,11 +246,35 @@
 		Como hay más puntos de datos en el Grupo 2, reduciremos la magnitud del Grupo 1, e incrementaremos la magnitud del Grupo 3 para que coincida. Los puntos de datos en el Grupo 2 permanecerán sin cambios.<br><br>
 		Mirando mi gráfica, puedo ver que los puntos de datos en el Grupo 1 caen entre el 8-10 de junio y el pico en 16 mag, +0.25 mag comparado con el Grupo 2. Para alinear estos picos, necesito bajar todos los puntos de datos entre el 8-10 de junio 0.25 mag. Esto puede hacerse calculando <b>=SUM(magnitude-0.25)</b><br><br>
 		El último pico parece tomar lugar alrededor del 22 de junio, y alcanza su máximo de -0.35 en comparación con los primeros picos. Esto significa que deberá agregar 0.35 a todos los valores alrededor del 22 de junio.<br><br>
-		Copie la magnitud para el Grupo 2 directamente desde la columna magnitude y haga un nuevo gráfico de dispersión mostrando <b>Altered Magnitude</b> y <b>Phase</b>. Si es necesario, siga ajustando sus valores de esta manera, hasta que haya alineado los picos en su gráfica (vea imagen debajo).
+		Copie la magnitud para el Grupo 2 directamente desde la columna magnitude y haga un nuevo gráfico de dispersión mostrando <b>Altered Magnitude</b> y <b>Phase</b>. Si es necesario, siga ajustando sus valores de esta manera, hasta que haya alineado los picos en su gráfica (vea imagen debajo).<br><br></li>
 </ol>
 <h4>Conclusión</h4>	
 <p>
 	Usted debería tener ahora una curva de luz sólida que muestre el cambio en el brillo del asteroide a lo largo del tiempo. ¡Felicidades!</p>
+<ol>
+	<li>¿Cuál es el periodo de rotación del asteroide?  _ _ _ _ _ _ _ _ _ _ horas</li><br><br></li>
+	<li>¿Alguno de sus compañeros de clase uso un periodo diferente? Compare sus gráficas finales. ¿Quién piensa que estuvo más cerca de la respuesta correcta?<br><br></li>
+</ol>
+<p>
+	Ahora, responda las siguientes preguntas para demostrar su entendimiento de como los astrónomos miden los periodos de rotación de los asteroides.<br><br></p>
+<ol>
+	<il>¿Qué nos muestra esta curva de luz?<br><br></li>
+	<li>¿Qué causa que varíe el brillo del asteroide?<br><br></li>
+	<li>¿Se vería igual la curva de luz si el asteroide fuera esférico?<br><br></li>
+	<li>¿Cuánto tiempo le toma a su asteroide rotar usando solo su curva de luz final?<br><br>
+		<ol type="a">
+			<il>¿Cómo midió el periodo de rotación?<br><br></li>
+		</ol>
+	</li>
+	<li>¿La magnitud general creció progresivamente más alto o bajo con el tiempo?<br><br>
+		<ol type="a">
+			<il>¿Por qué podría suceder esto?<br><br></li>
+		</ol>
+	</li>
+</ol>
+    
+
+	
 	
 	
 </font>   
