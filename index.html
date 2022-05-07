@@ -296,7 +296,7 @@
 		<img src="asteroid-rotation-scrn10-700x150.max-1000x1000.png"/><br><br></li>
 	<li>Ordene su hoja de cálculo por el <b>Telescope Code</b>. Borre todas las filas que no tengan el telescope code ‘<b>Z21</b>’, esto nos dejará con datos colectados por un telescopio LCO de 0.4 metros en el Observatorio Teide.<br><br></li>
 	<li>En esta actividad estaremos trazando el cambio en la magnitud (brillo) de un asteroide con el tiempo. Para hacer esto, haga un diagrama de dispersión de <b>date</b> y <b>magnitude</b>. Puede resaltar ambas columnas presionando <b>CMD</b> en una Mac o <b>CTRL</b> en un dispositivo Windows, luego seleccione <b>Gráfico>Gráfico de dispersión marcado.<br><br></b>
-		<img src="screen_shot_2017-02-24_at_12.39.57-737x364.max-1000x1000.png"/><br><br>
+		<img src="screen_shot_2017-02-24_at_12.39.57-737x364.max-1000x1000.png"/ height="300px" width="600px"><br><br>
 		Notará que hay brechas en los datos, como los mostrados en la imagen de arriba, dándonos una serie de curvas de luz parciales. El siguiente paso es combinar los datos y crear una curva de luz completa, hágalo siguiendo los pasos siguientes.<br><br></li>
 	<li>Si está usando la hoja de cálculo pre hecha, vaya a la segunda hoja llamada ‘<b>2002_KL6 (2)</b>’. Si ha creado su propia hoja de cálculo, abra una nueva hoja de Excel y copie sus propios datos en ella. Puede hacer esto dando click derecho en la pestaña de la hoja y seleccionando <b>Mover o Copiar</b> y luego marcando <b>Crear una copia</b>. **No borre su primera hoja o curva de luz**.<br><br></li>
 	<li>Ahora necesitamos introducir el periodo de rotación del asteroide. El periodo de rotación será introducido en una columna llamada ‘<b>Period</b>’. Si le gustaría saber el periodo de rotación, sombree el siguiente texto:<br><br>
@@ -304,7 +304,7 @@
     		De otra manera, debe introducir un periodo de rotación aleatorio, después inferir con qué precisión se basa el valor en la curva de luz que se trazará en el Paso 10. Como punto de partida le diremos que el plazo para 2002 KL6 es de entre 4.5 horas y 5 horas. Si ingresa el periodo de rotación correcto, debería ver una serie de curvas de luz apiladas. Si el valor es incorrecto, los datos aparecerán confusos y aleatorios. Simplemente cambia la cifra en la columna Period hasta que esté satisfecho con la curva de luz.<br><br></li>
 	<li>Ahora necesita convertir su periodo de rotación en una fracción de un día. En una columna llamada <b>Rotation</b>, use la siguiente ecuación para introducir el valor correcto en cada fila:<br><br>
 		<b>Periodo(hrs)/24(hrs)</b><br><br>
-		<img src="asteroid-rotation-scrn11-855x150-2.max-1000x1000.png"/ height="100px" width="600px" ><br><br></li>
+		<img src="asteroid-rotation-scrn11-855x150-2.max-1000x1000.png"/ height="110px" width="660px" ><br><br></li>
 	<li>Ahora usaremos el periodo de rotación y la fecha, para calcular la <b>Fase</b>. En una columna llamada <b>Phase</b>, use la siguiente ecuación donde INT convertirá la segunda cantidad en un número entero.<br><br>
 		<b>(fecha/rotación)-INT(fecha/rotación)</b><br><br></li>
 	<li>Complete la <b>Phase</b> de cada fila.<br><br></li>
