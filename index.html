@@ -9,101 +9,41 @@
       margin: 0;
       font-family: Raleway;
     }
-    
-    <!-- Menú -->
-    .container1 {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-    }
-    
-    header {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    
-    
-    table {
-      color: white;
-    }
-    
-    .button {
-      padding: 20px 0px 20px 0px;
-    }
-    
-    label {
-      color: black;
-      font-family: Raleway;
-    }
-
-    .texto {
-      background: #131313;
-      margin: 20px 20px 20px 10px;
-      border-radius: 1rem;
-      padding: 0 20px 0 20px;
-      box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
-    }
-
-    .listas,
-    .numeracion {
-      padding:0 20px 0 20px;
-      text-align: justify;
-    }
-    
-    .actividades {
-      font-size: 25px;
-      padding-left: 30px;
-    }
-
-    
-
-    .container2 {
-      display: flex;
-      flex-flow: row;
-    }
-
-    a {
-      color: #0099FF;
-    }
-
-    .capa {
-      background: #131313;
-      height: 40px;
-      position: relative;
-      padding: 0;
-    }
-
-     p {
-      padding: 0px 0px 0px 25px;
-      text-align: justify;
-    }
-    
-    h2 {
-      text-align: center;
-      padding: 0;
-      font-size: 40px;
-    }
-
-    h3 {
-      padding: 0;
-      font-size: 30px;
-    }
-
-    h4 {
-      padding: 0;
-      font-size: 20px;
-    }
 
     body {
       background-color: black;
     }
 
-    #header_wrap2 {
-      justify-items: center;
-      align-items: flex-end;
-      margin: 0px;
+
+
+    /* Título de la página */
+    .titulo {
+      display: flex;
+      justify-content: center;
+      background: black;
+      color: #066DCC;
+      font-weight: bold;
+      padding: 33px;
+      font-size: 60px
+    }
+
+
+
+    /* Logo INAOE */
+    .logoimg {
+      display: flex;
+      height: 120px;
+      align-items: center;
+      margin: 15px;
+    }
+
+
+
+    /* Menú principal */
+    .container1 {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
     }
 
     #header {
@@ -118,16 +58,11 @@
       background: #02284A;
       z-index: 3;
     }
-    
-    ul.listas,
-    ol {
-      font-family: Raleway;
-      padding: 0px 0px 0px 30px;
-    }
-    
-    ol ol {
-      font-family: Raleway;
-      padding: 0px 0px 0px 30px;
+
+    header {
+      display: flex;
+      justify-content: center;
+      width: 100%;
     }
 
     ul.nav,
@@ -162,6 +97,16 @@
       display: block;
     }
 
+
+
+    .container2 {
+      display: flex;
+      flex-flow: row;
+    }
+
+
+
+    /* Menú de la página */
     .indice {
       background: #54ABFA;
       margin: 50px 10px 0 10px;
@@ -173,6 +118,11 @@
       top: 55px;
       z-index: 2;
       display: block;
+      box-shadow: 5px 5px 4px #162635, -5px -5px 4px #6b8196;
+    }
+
+    a {
+      color: #0099FF;
     }
 
     a.contenido {
@@ -189,26 +139,100 @@
       padding: 0 0 0 30px;
     }
 
-    .titulo {
-      display: flex;
-      justify-content: center;
-      background: black;
-      color: #066DCC;
-      font-weight: bold;
-      padding: 33px;
-      font-size: 60px
+
+
+    /* Texto general */
+    .texto {
+      background: #131313;
+      margin: 20px 20px 20px 10px;
+      border-radius: 1rem;
+      padding: 0 20px 0 20px;
+      box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
+    .capa {
+      background: #131313;
+      height: 40px;
+      position: relative;
+      padding: 0;
     }
 
-    .logoimg {
-      display: flex;
-      height: 120px;
-      align-items: center;
-      margin: 15px;
+    p {
+      padding: 0 20px 0 10px;
+      text-align: justify;
+      text-indent: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      padding: 0;
+      font-size: 40px;
+    }
+
+    h3 {
+      padding: 0;
+      font-size: 30px;
+    }
+
+    h4 {
+      padding: 0;
+      font-size: 20px;
+    }
+
+
+
+    /* Tablas */
+    table {
+      color: white;
+    }
+
+
+
+    /* Listas o numeración */
+    .listas,
+    .numeracion {
+      padding: 0 20px 0 20px;
+      text-align: justify;
+    }
+
+    ul.listas,
+    ol {
+      font-family: Raleway;
+      padding: 0px 0px 0px 30px;
+    }
+
+    ol ol {
+      font-family: Raleway;
+      padding: 0px 0px 0px 30px;
+    }
+
+
+
+    /* Actividad diáctica */
+    .button {
+      padding: 20px 0px 20px 0px;
+    }
+
+    label {
+      color: black;
+      font-family: Raleway;
+    }
+
+    .preguntas {
+      background: white;
+      width: 80%;
+      height: auto;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+
+
+    /* Pie de página */
+    #header_wrap2 {
+      justify-items: center;
+      align-items: flex-end;
+      margin: 0px;
     }
   </style>
 
@@ -342,7 +366,8 @@
           <h2>Construcción de una Curva de Luz<br><br></h2>
           <p style="text-align: justify;">
             A continuación, se presenta la traducción de una actividad en la que podrá realizar su propia curva de luz.
-            La actividad original se puede encontrar en la página: <a target="_blank" href="https://lco.global/education/activities/plotting-an-asteroid-light-curve/">Las Cumbres
+            La actividad original se puede encontrar en la página: <a target="_blank"
+              href="https://lco.global/education/activities/plotting-an-asteroid-light-curve/">Las Cumbres
               Observatory</a><br><br>
           </p>
           <div class="capa"><a name="indice3"></a></div>
@@ -458,8 +483,7 @@
                 <li><b>Filter</b> (denotado por una letra como ‘V’ que significa ‘visible’)</li>
                 <li><b>Telescope Code</b> (un código hecho de varios números de letras y números).<br><br></li>
               </ol>
-              <img src="img/asteroid-rotation-scrn10-700x150.max-1000x1000.png" / height="120px"
-              width="600px"><br><br>
+              <img src="img/asteroid-rotation-scrn10-700x150.max-1000x1000.png" / height="120px" width="600px"><br><br>
             </li>
             <li>Ordene su hoja de cálculo por el <b>Telescope Code</b>. Borre todas las filas que no tengan el telescope
               code ‘<b>Z21</b>’, esto nos dejará con datos colectados por un telescopio LCO de 0.4 metros en el
