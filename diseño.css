@@ -11,7 +11,7 @@
       border-image:white;
       border-width: 1px;
       border-style:solid;
-      image-align:center;
+      display:block;
     }
     
     
